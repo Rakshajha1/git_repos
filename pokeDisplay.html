@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Get Pokemon using FETCH APIs">
+        <template lwc:if={allPokemons}>
+          <div>
+            <!-- <img src={imageURL} height="200" width="200" / /> -->
+              <h2>{allPokemons.name}</h2>
+              <img src={allPokemons.sprite} alt={pokemons.name} />
+          </div>
+        </template>  
+      </lightning-card>
+</template>
